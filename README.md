@@ -8,5 +8,5 @@ docker build -t mario21ic/terraform .
 
 Verify
 ```
-docker build -t mario21ic/terraform terraform --version
+docker build -t mario21ic/terraform --version
 ```

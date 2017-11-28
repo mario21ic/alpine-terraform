@@ -6,3 +6,6 @@ RUN apk update && apk add wget ca-certificates && wget -O /tmp/terraform.zip "ht
   mkdir /app 
 
 WORKDIR /app
+
+COPY entrypoint.sh /etc/entrypoint.sh
+ENTRYPOINT ["/etc/entrypoint.sh"]
